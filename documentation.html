@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <title>Welcome Page</title>
+    </head>
+    <body>
+        <div id="info">
+            <header><h1>Welcome to the US Wildfare Data Map</h1></header>
+            <nav>
+                <a href="index.html"> Jump to Map</a>
+            </nav>
+            <h2>Documentation</h2>
+            <p>This project was created using the following programs: HTML, CSS, 
+            JavaScript, MySQL, and excel. 
+            The idea behind this product is to have a map of the United States of 
+            America and display data based off of fires in the nation. We chose to display
+            four different attributes that are shown by having different colors. Those 
+            attributes are white flames for Death Toll, orange flames for Number of 
+            Fires, red flames for Damage, and green flames for Cost. Each state will
+            have all four flames representing their own personal data. The piece of data 
+            that is more prevalent has an opaquer transparency compared to less 
+            prevalent data which is more translucent. If you want to zoom in on an individual state and look at its data, all you have to do is click on that state which will light up when 
+            you hover over it.</p> 
+            <p>The data that we gathered was found throughout several websites, we 
+            took that data from 2010-2019 and displayed it in an artistic way. There are 
+            check boxes for each one of those years that pulls data to display the flames.
+            The way the flames transparency changes all depends on the data that has 
+            been averaged out to get normalized numbers as a nation. To change what 
+            year you see you simply uncheck that year and click on the checkbox for another year. Same goes when you are on each individual state page. The only
+            year that we could not find data for was 2012, we are not sure why we 
+            could not find the data for that year and did not find many answers to why it was not 
+            available to the public.</p>
+            <div id="deathFlame" class = "containers">
+                <div class="white1 flame1"></div>
+                <div class="white2 flame1"></div>
+                <div class="white3 flame1"></div>
+                <div class="white4 flame1"></div>
+            </div>
+            <div id="damageFlame" class="containers1">
+                <div class="red1 flame1"></div>
+                <div class="red2 flame1"></div>
+                <div class="red3 flame1"></div>
+                <div class="red4 flame1"></div>
+            </div>
+            <div id="numFlame" class="containers2">
+                <div class="orange1 flame1"></div>
+                <div class="orange2 flame1"></div>
+                <div class="orange3 flame1"></div>
+                <div class="orange4 flame1"></div>
+            </div>
+            <div id="costFlame" class="containers3">
+                <div class="green1 flame1"></div>
+                <div class="green2 flame1"></div>
+                <div class="green3 flame1"></div>
+                <div class="green4 flame1"></div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,271 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #323232;
+    text-align: center;
+    font-family: Arial, Halvetica, sans-serif;
+    margin: auto;
+    width: 1000px;
+}
+
+#info {
+    position: absolute;
+    margin: auto;
+    width: 1000px;
+    background-color: dimgray;
+    border: 5px solid black;
+    color: white
+}
+
+#info p{
+    padding: 5px;
+}
+
+nav{
+    margin: 0px;
+    font-size: 25px;
+}
+nav a{
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0px 5px;
+}
+nav a:link{color: #ffa028;}
+nav a:visited{color: #ffa028;}
+
+.containers{
+    /*float: left;*/
+    margin:0px;
+    width: 60px;
+    height: 60px;
+    position:absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 825px;
+    right: 0px;
+    transform-origin:center bottom;
+    animation-name: flicker;
+    animation-duration:3ms;
+    animation-delay:200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+    opacity: 1;
+    pointer-events: none;
+}
+.containers1{
+    /*float: left;*/
+    margin:0px;
+    width: 60px;
+    height: 60px;
+    position:absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 780px;
+    right: 0px;
+    transform-origin:center bottom;
+    animation-name: flicker;
+    animation-duration:3ms;
+    animation-delay:200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+    opacity: 1;
+    pointer-events: none;
+}
+.containers2{
+    /*float: left;*/
+    margin:0px;
+    width: 60px;
+    height: 60px;
+    position:absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 155px;
+    right: 0px;
+    transform-origin:center bottom;
+    animation-name: flicker;
+    animation-duration:3ms;
+    animation-delay:200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+    opacity: 1;
+    pointer-events: none;
+}
+.containers3{
+    /*float: left;*/
+    margin:0px;
+    width: 60px;
+    height: 60px;
+    position:absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 110px;
+    right: 0px;
+    transform-origin:center bottom;
+    animation-name: flicker;
+    animation-duration:3ms;
+    animation-delay:200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+    opacity: 1;
+    pointer-events: none;
+}
+
+.flame1{
+    bottom:0;
+    position:absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform:rotate(-45deg) scale(.7,.7);
+}
+
+.white3{
+    left:15px; 
+    width: 30px;
+    height: 30px;
+    background:gray;
+    box-shadow: 0px 0px 9px 4px #65535c;
+}
+
+.white2{
+    left:10px; 
+    width: 40px;
+    height: 40px;
+    background:white;
+    box-shadow: 0px 0px 9px 4px #65535c;
+}
+
+.white1{
+    left:5px;
+    width: 50px;
+    height: 50px;
+    background:white;
+    box-shadow: 0px 0px 5px 4px #65535c;
+}
+
+.white4{
+    left:15px; 
+    bottom:-4px;
+    width: 30px;
+    height: 30px;
+    background:white;
+    box-shadow: 0px 0px 9px 4px #65535c;
+}
+
+.circle{
+    border-radius: 50%;
+    position:absolute;  
+}
+
+.red3{
+    left:15px; 
+    width: 30px;
+    height: 30px;
+    background:red;
+    box-shadow: 0px 0px 9px 4px #a77472;
+}
+
+.red2{
+    left:10px; 
+    width: 40px;
+    height: 40px;
+    background:maroon;
+    box-shadow: 0px 0px 9px 4px #a77472;
+}
+
+.red1{
+    left:5px;
+    width: 50px;
+    height: 50px;
+    background:maroon;
+    box-shadow: 0px 0px 5px 4px #a77472;
+}
+
+.red4{
+    left:15px; 
+    bottom:-4px;
+    width: 30px;
+    height: 30px;
+    background:white;
+    box-shadow: 0px 0px 9px 4px #a77472;
+}
+
+.orange3{
+    left:15px; 
+    width: 30px;
+    height: 30px;
+    background:yellow;
+    box-shadow: 0px 0px 9px 4px #f2987d;
+}
+
+.orange2{
+    left:10px; 
+    width: 40px;
+    height: 40px;
+    background:#a77472;
+    box-shadow: 0px 0px 9px 4px #ffa028;
+}
+
+.orange1{
+    left:5px;
+    width: 50px;
+    height: 50px;
+    background:#a77472;
+    box-shadow: 0px 0px 5px 4px #ffa028;
+}
+
+.orange4{
+    left:15px; 
+    bottom:-4px;
+    width: 30px;
+    height: 30px;
+    background:white;
+    box-shadow: 0px 0px 9px 4px #ffa028;
+}
+
+.green3{
+    left:15px; 
+    width: 30px;
+    height: 30px;
+    background:lightblue;
+    box-shadow: 0px 0px 9px 4px ;
+}
+
+.green2{
+    left:10px; 
+    width: 40px;
+    height: 40px;
+    /*background:#f2987d;*/
+    background: #002fff ;
+    box-shadow: 0px 0px 9px 4px  #4567ff ;
+}
+
+.green1{
+    left:5px;
+    width: 50px;
+    height: 50px;
+    background: #002fff ;
+    box-shadow: 0px 0px 5px 4px  #4567ff ;
+}
+
+.green4{
+    left:15px; 
+    bottom:-4px;
+    width: 30px;
+    height: 30px;
+    background: white;
+    box-shadow: 0px 0px 9px 4px  #4567ff ;
+}
+
+
+@keyframes flicker{
+    0%   {transform: rotate(-1deg);}
+    20%  {transform: rotate(1deg);}
+    40%  {transform: rotate(-1deg);}
+    60%  {transform: rotate(1deg) scaleY(1.04);}
+    80%  {transform: rotate(-2deg) scaleY(0.92);}
+    100% {transform: rotate(1deg);}
+}

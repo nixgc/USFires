@@ -1,0 +1,353 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #323232;
+}
+
+input {
+    background-color: white;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#info {
+    position: relative;
+    width: 500px;
+    float: left;
+    height: auto;
+    background-color: dimgray;
+    border: 5px solid black;
+}
+
+#text{
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+form {
+    font-size: 40px;
+}
+
+#state {
+    position: relative;
+    width: 50%; 
+    float: right;
+    height: auto;
+    margin: 0px;
+}
+
+#state img {
+    text-align: right;
+    width: 100%;
+}
+
+/*CSS for the Legend*/
+.my-legend .legend-title {
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 100%;
+    color: white;
+    }
+.my-legend .legend-scale ul {
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+.my-legend .legend-scale ul li {
+    display: block;
+    float: left;
+    width: 100px;
+    margin-bottom: 6px;
+    text-align: center;
+    font-size: 80%;
+    color: white;
+    list-style: none;
+    }
+.my-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 25px;
+    width: 100px;
+    }
+.my-legend {
+    position: relative;
+    left: 1260px;
+    bottom: 40px;
+    width: 400px;
+    height: 0%;
+    padding: inherit;
+    padding: 2px;
+    box-shadow: 3px, 5px;
+}
+
+.containers{
+    /*float: left;*/
+    margin:0px;
+    width: 60px;
+    height: 60px;
+    position:absolute;
+    top: 300px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    transform-origin:center bottom;
+    animation-name: flicker;
+    animation-duration:3ms;
+    animation-delay:200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+    opacity: 1;
+}
+.containers1{
+    /*display:inline;*/
+    /*float: left;*/
+    margin:0px;
+    width: 60px;
+    height: 60px;
+    position:absolute;
+    top: 300px;
+    bottom: 0px;
+    left: 200px;
+    right: 0px;
+    transform-origin:center bottom;
+    animation-name: flicker;
+    animation-duration:3ms;
+    animation-delay:200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+    opacity: 1;
+}
+.containers2{
+    display:inline;
+    /*float: left;*/
+    margin:0px;
+    width: 60px;
+    height: 60px;
+    position:absolute;
+    top: 300px;
+    bottom: 0px;
+    left: 400px;
+    right: 0px;
+    transform-origin:center bottom;
+    animation-name: flicker;
+    animation-duration:3ms;
+    animation-delay:200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+    opacity: 1;
+}
+.containers3{
+    display:inline;
+    /*float: left;*/
+    margin:0px;
+    width: 60px;
+    height: 60px;
+    position:absolute;
+    top: 300px;
+    bottom: 0px;
+    left: 600px;
+    right: 0px;
+    transform-origin:center bottom;
+    animation-name: flicker;
+    animation-duration:3ms;
+    animation-delay:200ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+    opacity: 1;
+}
+.flame{
+    bottom:0;
+    position:absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform:rotate(-45deg) scale(3,3);
+}
+
+.flame2{
+    bottom:0;
+    position:absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform:rotate(-45deg) scale(3,3);
+}
+
+.flame3{
+    bottom:0;
+    position:absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform:rotate(-45deg) scale(3,3);
+}
+
+.flame4{
+    bottom:0;
+    position:absolute;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    transform:rotate(-45deg) scale(3,3);
+}
+
+.white3{
+    left:15px; 
+    width: 30px;
+    height: 30px;
+    background:gray;
+    box-shadow: 0px 0px 9px 4px #65535c;
+}
+
+.white2{
+    left:10px; 
+    width: 40px;
+    height: 40px;
+    background:white;
+    box-shadow: 0px 0px 9px 4px #65535c;
+}
+
+.white1{
+    left:5px;
+    width: 50px;
+    height: 50px;
+    background:white;
+    box-shadow: 0px 0px 5px 4px #65535c;
+}
+
+.white4{
+    left:15px; 
+    bottom:-4px;
+    width: 30px;
+    height: 30px;
+    background:white;
+    box-shadow: 0px 0px 9px 4px #65535c;
+}
+
+.circle{
+    border-radius: 50%;
+    position:absolute;  
+}
+
+.red3{
+    left:15px; 
+    width: 30px;
+    height: 30px;
+    background:red;
+    box-shadow: 0px 0px 9px 4px #a77472;
+}
+
+.red2{
+    left:10px; 
+    width: 40px;
+    height: 40px;
+    background:maroon;
+    box-shadow: 0px 0px 9px 4px #a77472;
+}
+
+.red1{
+    left:5px;
+    width: 50px;
+    height: 50px;
+    background:maroon;
+    box-shadow: 0px 0px 5px 4px #a77472;
+}
+
+.red4{
+    left:15px; 
+    bottom:-4px;
+    width: 30px;
+    height: 30px;
+    background:white;
+    box-shadow: 0px 0px 9px 4px #a77472;
+}
+
+.orange3{
+    left:15px; 
+    width: 30px;
+    height: 30px;
+    background:yellow;
+    box-shadow: 0px 0px 9px 4px #f2987d;
+}
+
+.orange2{
+    left:10px; 
+    width: 40px;
+    height: 40px;
+    background:#a77472;
+    box-shadow: 0px 0px 9px 4px #ffa028;
+}
+
+.orange1{
+    left:5px;
+    width: 50px;
+    height: 50px;
+    background:#a77472;
+    box-shadow: 0px 0px 5px 4px #ffa028;
+}
+
+.orange4{
+    left:15px; 
+    bottom:-4px;
+    width: 30px;
+    height: 30px;
+    background:white;
+    box-shadow: 0px 0px 9px 4px #ffa028;
+}
+
+.green3{
+    left:15px; 
+    width: 30px;
+    height: 30px;
+    background:lightblue;
+    box-shadow: 0px 0px 9px 4px ;
+}
+
+.green2{
+    left:10px; 
+    width: 40px;
+    height: 40px;
+    /*background:#f2987d;*/
+    background: #002fff ;
+    box-shadow: 0px 0px 9px 4px  #4567ff ;
+}
+
+.green1{
+    left:5px;
+    width: 50px;
+    height: 50px;
+    background: #002fff ;
+    box-shadow: 0px 0px 5px 4px  #4567ff ;
+}
+
+.green4{
+    left:15px; 
+    bottom:-4px;
+    width: 30px;
+    height: 30px;
+    background: white;
+    box-shadow: 0px 0px 9px 4px  #4567ff ;
+}
+
+
+@keyframes flicker{
+    0%   {transform: rotate(-1deg);}
+    20%  {transform: rotate(1deg);}
+    40%  {transform: rotate(-1deg);}
+    60%  {transform: rotate(1deg) scaleY(1.04);}
+    80%  {transform: rotate(-2deg) scaleY(0.92);}
+    100% {transform: rotate(1deg);}
+}

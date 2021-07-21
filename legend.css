@@ -1,0 +1,40 @@
+.legend {
+    width: 405px;
+    height: 60px;
+    padding: inherit;
+    border: 2px solid;
+    padding: 2px;
+    box-shadow: 3px 5px;
+    background-color: darkgray;
+}
+
+.legend .title{
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 90%
+}
+
+.legend .scale ul{
+    margin: 0;
+    padding: 0;
+    float: left;
+    list-style: none;
+} 
+
+.legend .scale ul li{
+    display: block;
+    float: left;
+    width: 100px;
+    margin-bottom: 6px;
+    text-align: center;
+    font-size: 80%;
+    list-style: none;
+}
+
+.legend ul.labels li span{
+    display: block;
+    float: left;
+    height: 15px;
+    width: 100px;
+}

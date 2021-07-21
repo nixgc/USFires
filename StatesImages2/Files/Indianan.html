@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href="../states2.css">
+    </head>
+    <body>
+        <form>
+            <input type ="button" value= "Back" onclick= "history.back()">
+        </form>
+        <div id = "info">
+            <div id = "text">
+                <h1>Indiana</h1>
+                <form>
+                    <label for="2010">2010</label>
+                    <input id="2010" name="2010" type="checkbox" value="yes" onchange="funct1()" /><br/>
+                    <label for="2011">2011</label>
+                    <input id="2011" name="2011" type="checkbox" value="yes" onchange="funct1()" /><br/>
+                    <label for="2013">2013</label>
+                    <input id="2013" name="2013" type="checkbox" value="yes" onchange="funct1()" /><br/>
+                    <label for="2014">2014</label>
+                    <input id="2014" name="2014" type="checkbox" value="yes" onchange="funct1()" /><br/>
+                    <label for="2015">2015</label>
+                    <input id="2015" name="2015" type="checkbox" value="yes" onchange="funct1()" /><br/>
+                    <label for="2016">2016</label>
+                    <input id="2016" name="2016" type="checkbox" value="yes" onchange="funct1()" /><br/>
+                    <label for="2017">2017</label>
+                    <input id="2017" name="2017" type="checkbox" value="yes" onchange="funct1()" /><br/>
+                    <label for="2018">2018</label>
+                    <input id="2018" name="2018" type="checkbox" value="yes" onchange="funct1()" /><br/>
+                    <label for="2019">2019</label>
+                    <input id="2019" name="2019" type="checkbox" value="yes" onchange="funct1()" /><br/>
+                </form>
+                <img src="../states/Indiana.png" alt="Indiana" width="150px" height="200px">
+            </div>
+        </div>
+        <div id = "state">
+            <div id="deathFlame" class = "containers">
+                <div class="white1 flame"></div>
+                <div class="white2 flame"></div>
+                <div class="white3 flame"></div>
+                <div class="white4 flame"></div>
+            </div>
+            <div id="damageFlame" class="containers1">
+                <div class="red1 flame2"></div>
+                <div class="red2 flame2"></div>
+                <div class="red3 flame2"></div>
+                <div class="red4 flame2"></div>
+            </div>
+            <div id="numFlame" class="containers2">
+                <div class="orange1 flame3"></div>
+                <div class="orange2 flame3"></div>
+                <div class="orange3 flame3"></div>
+                <div class="orange4 flame3"></div>
+            </div>
+            <div id="costFlame" class="containers3">
+                <div class="green1 flame4"></div>
+                <div class="green2 flame4"></div>
+                <div class="green3 flame4"></div>
+                <div class="green4 flame4"></div>
+            </div>
+        </div>
+        <div class='my-legend'>
+        <div class='legend-title'>Representation for Color of the Flames</div>
+        <div class='legend-scale'>
+          <ul class='legend-labels'>
+            <li><span style='background:white; opacity: .7;'></span>Death Toll</li>
+            <li><span style='background:#ffa028;'></span>Number of Fires</li>
+            <li><span style='background:maroon;'></span>Damage</li>
+            <li><span style='background:#4567ff;'></span>Cost</li>
+          </ul>
+        </div>
+        </div>
+        <script>
+            //Function for 2010 and 2018 since the show is the same
+            function funct1(){
+                var death = document.getElementsByClassName("flame");
+                var damage = document.getElementsByClassName("flame2");
+                var number = document.getElementsByClassName("flame3");
+                var cost = document.getElementsByClassName("flame4");
+                if(document.getElementById("2010").checked || document.getElementById("2014").checked){
+                    for(var i = 0; i < death.length; i++){
+                        death[i].style.transform = "rotate(-45deg) scale(2,2)";
+                    }
+                    for(var i = 0; i < damage.length; i++){
+                        damage[i].style.transform = "rotate(-45deg) scale(1.5,1.5)";
+                    }
+                    for(var i = 0; i < cost.length; i++){
+                        cost[i].style.transform = "rotate(-45deg) scale(1.5,1.5)";
+                    }
+                }
+                else if(document.getElementById("2011").checked || document.getElementById("2013").checked || document.getElementById("2015").checked || document.getElementById("2016").checked || document.getElementById("2017").checked){
+                    for(var i = 0; i < damage.length; i++){
+                        damage[i].style.transform = "rotate(-45deg) scale(2,2)";
+                    }
+                    for(var i = 0; i < number.length; i++){
+                        number[i].style.transform = "rotate(-45deg) scale(1.5,1.5)";
+                    }
+                }
+                else if(document.getElementById("2018").checked){
+                    for(var i = 0; i < number.length; i++){
+                        number[i].style.transform = "rotate(-45deg) scale(2,2)";
+                    }
+                    for(var i = 0; i < damage.length; i++){
+                        damage[i].style.transform = "rotate(-45deg) scale(1.5,1.5)";
+                    }
+                    for(var i = 0; i < cost.length; i++){
+                        cost[i].style.transform = "rotate(-45deg) scale(1.5,1.5)";
+                    }
+                }
+                else if(document.getElementById("2019").checked){
+                    for(var i = 0; i < damage.length; i++){
+                        damage[i].style.transform = "rotate(-45deg) scale(2,2)";
+                    }
+                    for(var i = 0; i < cost.length; i++){
+                        cost[i].style.transform = "rotate(-45deg) scale(2,2)";
+                    }
+                    for(var i = 0; i < death.length; i++){
+                        death[i].style.transform = "rotate(-45deg) scale(1.5,1.5)";
+                    }
+                }
+                else {
+                    for(var i = 0; i < 4; i++){
+                        death[i].style.transform = "rotate(-45deg) scale(3,3)";
+                        damage[i].style.transform = "rotate(-45deg) scale(3,3)";
+                        number[i].style.transform = "rotate(-45deg) scale(3,3)";
+                        cost[i].style.transform = "rotate(-45deg) scale(3,3)";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>
